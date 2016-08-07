@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BF14FA1A-CEBD-4CCD-B839-464A04E822C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FYP_RFID</RootNamespace>
+    <AssemblyName>FYP_RFID</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ATTENDANCE_MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ATTENDANCE_MENU.Designer.cs">
+      <DependentUpon>ATTENDANCE_MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BEE8_COURSES.cs" />
+    <Compile Include="BEE8B_ATTENDANCE.cs" />
+    <Compile Include="BEE8_STUDENTS.cs" />
+    <Compile Include="FACULTYATTENDANCE_MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FACULTYATTENDANCE_MENU.Designer.cs">
+      <DependentUpon>FACULTYATTENDANCE_MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FACULTY_ATTENDNACE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FACULTY_ATTENDNACE.Designer.cs">
+      <DependentUpon>FACULTY_ATTENDNACE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FACULTYMGMT_ATTENDANCE.cs" />
+    <Compile Include="FACULTYENGG_ATTENDANCE.cs" />
+    <Compile Include="FACULTY_ATTENDRECORD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FACULTY_ATTENDRECORD.Designer.cs">
+      <DependentUpon>FACULTY_ATTENDRECORD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FACULTY_ENGG.cs" />
+    <Compile Include="BEE8_CLASSES.cs" />
+    <Compile Include="FACULTY_MGMT.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GATELOG_STATUS.cs" />
+    <Compile Include="STUDENTREG_MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STUDENTREG_MENU.Designer.cs">
+      <DependentUpon>STUDENTREG_MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENT_ATTENDANCE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STUDENT_ATTENDANCE.Designer.cs">
+      <DependentUpon>STUDENT_ATTENDANCE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENT_SHOWATTND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STUDENT_SHOWATTND.Designer.cs">
+      <DependentUpon>STUDENT_SHOWATTND.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TIMETABLE.cs" />
+    <Compile Include="COURSE_ADDITION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COURSE_ADDITION.Designer.cs">
+      <DependentUpon>COURSE_ADDITION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COURSE_REGISTRATION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COURSE_REGISTRATION.Designer.cs">
+      <DependentUpon>COURSE_REGISTRATION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FACULTY_REGISTRATION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FACULTY_REGISTRATION.Designer.cs">
+      <DependentUpon>FACULTY_REGISTRATION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TIMETABLE_MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TIMETABLE_MENU.Designer.cs">
+      <DependentUpon>TIMETABLE_MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GATE_IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GATE_IN.Designer.cs">
+      <DependentUpon>GATE_IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GATE_MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GATE_MENU.Designer.cs">
+      <DependentUpon>GATE_MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GATE_OUT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GATE_OUT.Designer.cs">
+      <DependentUpon>GATE_OUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOG_STATUS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOG_STATUS.Designer.cs">
+      <DependentUpon>LOG_STATUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION_MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION_MENU.Designer.cs">
+      <DependentUpon>REGISTRATION_MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENT_ATTENDANCE_MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STUDENT_ATTENDANCE_MENU.Designer.cs">
+      <DependentUpon>STUDENT_ATTENDANCE_MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GATE_LOG.cs" />
+    <Compile Include="RECORDS.cs" />
+    <Compile Include="MAIN_MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN_MENU.Designer.cs">
+      <DependentUpon>MAIN_MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STUDENT_REGISTRATION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STUDENT_REGISTRATION.Designer.cs">
+      <DependentUpon>STUDENT_REGISTRATION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ATTENDANCE_MENU.resx">
+      <DependentUpon>ATTENDANCE_MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FACULTYATTENDANCE_MENU.resx">
+      <DependentUpon>FACULTYATTENDANCE_MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FACULTY_ATTENDNACE.resx">
+      <DependentUpon>FACULTY_ATTENDNACE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FACULTY_ATTENDRECORD.resx">
+      <DependentUpon>FACULTY_ATTENDRECORD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN_MENU.resx">
+      <DependentUpon>MAIN_MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COURSE_ADDITION.resx">
+      <DependentUpon>COURSE_ADDITION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COURSE_REGISTRATION.resx">
+      <DependentUpon>COURSE_REGISTRATION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FACULTY_REGISTRATION.resx">
+      <DependentUpon>FACULTY_REGISTRATION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STUDENTREG_MENU.resx">
+      <DependentUpon>STUDENTREG_MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STUDENT_SHOWATTND.resx">
+      <DependentUpon>STUDENT_SHOWATTND.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TIMETABLE_MENU.resx">
+      <DependentUpon>TIMETABLE_MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STUDENT_ATTENDANCE.resx">
+      <DependentUpon>STUDENT_ATTENDANCE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STUDENT_REGISTRATION.resx">
+      <DependentUpon>STUDENT_REGISTRATION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GATE_IN.resx">
+      <DependentUpon>GATE_IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GATE_MENU.resx">
+      <DependentUpon>GATE_MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GATE_OUT.resx">
+      <DependentUpon>GATE_OUT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOG_STATUS.resx">
+      <DependentUpon>LOG_STATUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION_MENU.resx">
+      <DependentUpon>REGISTRATION_MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STUDENT_ATTENDANCE_MENU.resx">
+      <DependentUpon>STUDENT_ATTENDANCE_MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
